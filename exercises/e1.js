@@ -6,6 +6,16 @@ import { data } from "../data/data";
 
 export function getPlanetNames(data) {
   // Your code goes here...
+  let planets = []
+  let planetNames = data.planets.filter((planet)=> {
+    return planets.push(planet.name);
+  })
+  return planets;
+  // for (let i = 0; i < data.length; i++){
+  //   for(let j =0; j < data[i].planets; j++){
+  //     return data[i].planets[j].name.filter(planetName);
+  //   }
+  // }
 }
 
 
