@@ -3,7 +3,6 @@ import { data } from "../data/data";
 // SPACE DATA EXERCISE 12
 // Return the sum of all moons for all planets
 // Return example: 42
-
 export function allPlanetsMoonsCount(data) {
   return data.planets 
   .reduce((acc, current) => { return acc + 

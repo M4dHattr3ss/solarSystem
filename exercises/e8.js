@@ -4,7 +4,6 @@ import { data } from "../data/data";
 // Return a Planet name by a given moon name
 // Return example: 'Planet Name'
 export function findPlanetNameByMoon(data, moonName) {
-  // Your code goes here...
   return data.planets
   .filter((planet) => planet.moons)
   .find((planet) => planet.moons.includes(moonName))

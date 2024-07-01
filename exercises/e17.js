@@ -7,11 +7,6 @@
  * * minBy(): Return the element where the callback function on that element yields the lowest value
  * * maxBy(): Return the element where the callback function on that element yields the highest value
  */
-
-// Input: array, callback
-// where the cb takes the element and it is the lowest value
-// Outputs: element in the original array
-
 export function minBy(array, cb) {
   if(array.length === 0){
     return undefined;
@@ -22,19 +17,10 @@ export function minBy(array, cb) {
       if(cb(array[i]) < min){
         min = cb(array[i]);
         minElement = array[i];
-        console.log('min: ', min); 
       }
   }
   return minElement;
 }
-
-// write and a simple callback
-// use that to test the function
-// place console logs in the function
-
-// Error1: Returning too early or returning when you shouldn't be. Give you a result that you don't wait.
-// Solution1: Place strategic console logs in loops or after reassignment to figure out where we stop iterating/processing the data
-// Error2: Not returning. When you get an unexpected undefined result. Make sure you are using the return key word. 
 
 export function maxBy(array, cb) {
     if (array.length === 0) {

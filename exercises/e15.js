@@ -3,7 +3,6 @@ import { data } from "../data/data";
 // SPACE DATA EXERCISE 15
 // Return an array of Planets' names without moons
 // Return example: ['name1', 'name2', ... , 'nameN']
-
 export function getPlanetsWithNoMoons(data) {
   return data.planets 
   .filter((planet) => (!planet.moons))
