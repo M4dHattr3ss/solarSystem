@@ -7,15 +7,10 @@
  * * Return a the first thing where the applied callback is truthey
  * The function MUST NOT use the find() method.
  */
-
-
 export function find(array, callback) {
-  // Your code goes here...
-
   for(let element of array){
     if(callback(element)){
       return element;
-      //break;
     }
   }
   return undefined;

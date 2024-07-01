@@ -12,16 +12,12 @@
 // where the cb takes the element and it is the lowest value
 // Outputs: element in the original array
 
-
 export function minBy(array, cb) {
-  // Your code goes here...
   if(array.length === 0){
     return undefined;
   }
-  
   let min = cb(array[0]);
   let minElement = array[0];
-
   for (let i = 0; i < array.length; i++){
       if(cb(array[i]) < min){
         min = cb(array[i]);
@@ -41,11 +37,9 @@ export function minBy(array, cb) {
 // Error2: Not returning. When you get an unexpected undefined result. Make sure you are using the return key word. 
 
 export function maxBy(array, cb) {
-  // Your code goes here...
     if (array.length === 0) {
       return undefined;
     }
-
   let max = cb(array[0]);
   let maxElement = array[0];
   
@@ -53,13 +47,10 @@ export function maxBy(array, cb) {
       if(cb(array[i]) > max){
         max = cb(array[i]);
         maxElement = array[i];
-        // console.log('Current Element: ', array[i]);
       }
   }
   return maxElement;
 }
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-17"
 // If the test has all tests passed, switch to the next exercise file

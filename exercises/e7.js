@@ -5,20 +5,10 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsNamesWithMoons(data) {
-  // Your code goes here...
-  // let moonPlanets = [];
-  // data.planets.filter((planet) => {
-  //   if(planet.moonsCount > 0){
-  //     return moonPlanets.push(planet.name);
-  //   }
-  // })
-  // return moonPlanets;
   return data.planets 
   .filter((planet) => planet.moonsCount > 0)
   .map((planet) => planet.name)
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
